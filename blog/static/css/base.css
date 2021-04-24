@@ -43,3 +43,9 @@ header h1 a {
 .post-entry h2 a:hover {
     color: red;
 }
+
+.post-entry h6 a,
+.post-entry h6 a:visited {
+    color: blue;
+    text-decoration: none;
+}
