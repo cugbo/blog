@@ -1,0 +1,13 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<h2>Login</h2>
+<form class"form-group" action="" method="POST">
+    {% csrf_token %} 
+    <p><input type="text" value='Username' placeholder="Enter Username"></p>
+    <p><input type="password" value='Password' placeholder="Enter Password"></p>
+    <p><input type="button" value="Login"</p>
+</form>
+<h6><a href="{% url 'password_reset' post.pk %}">Forget Password?</a>
+    &ensp; &ensp; &ensp;
+    <a href="{% url 'registration' post.pk %}">Register</a></h6> 
+{% endblock %}
